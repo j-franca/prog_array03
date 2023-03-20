@@ -5,17 +5,18 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
-    <script scr="prog.js" defer></script>
+    <script src="prog.js" defer></script>
     <title>Array, parte 3</title>
 </head>
 <body>
     <h1>Operações com array</h1>
     <hr><br>
-    <label for="pais">Digite o nome de um país:</label><br>
-    <input type="text" id="pais"><br><br>
+    <label for="nome_pais">Digite o nome de um país:</label><br>
+    <input type="text" id="nome_pais"><br><br>
     <div class="botoes">
         <div class="sombra">
-            <button onclick="mostrar()">Mostrar</button>
+            <!-- <button id="incluir">Mostrar</button> -->
+            <button onclick="incluir()">Mostrar</button>
         </div>
         <div class="sombra">
             <button onclick="excluir()">Excluir último dado</button>
@@ -23,5 +24,19 @@
     </div>
     <p>Você digitou: </p>
     <div id="res"></div>
+    <hr>
+    <p>
+        pais.push('final') - coloca no final <br>
+        pais.unshift('comeco') - coloca no começo <br>
+        pais.shift('primeiro') - tira o primeiro <br>
+        pais.pop('ultimo') - tira o ultimo <br>
+        pais.indexOf(posicao) - diz qual a posição <br>
+        pais.splice(3,0, "Cuba") - inserir na posição 3 <br>
+        pais.splice(3,1) - a partir da posição 3, excluir 1 (apaga o quarto) <br>
+        pais.reverse() - ordem reversa do que estiver inserido <br>
+        pais.sort() - ordem alfabética <br>
+
+
+    </p> 
 </body>
 </html>
